@@ -1,0 +1,54 @@
+Script started on Fri 16 Feb 2018 07:36:55 PM EST
+$ ls
+Clock.cpp  Event.h         makefile  README.txt     TellerQueue.cpp
+Clock.h    EventQueue.cpp  PA4.txt   Simulator.cpp  TellerQueue.h
+Event.cpp  EventQueue.h    qSim.cpp  Simulator.h
+$ make
+g++ -g -Wall -c qSim.cpp
+g++ -g -Wall -c Simulator.cpp
+g++ -g -Wall -c Event.cpp
+g++ -g -Wall -c Clock.cpp
+g++ -g -Wall -c EventQueue.cpp
+g++ -g -Wall -c TellerQueue.cpp
+g++ -g -Wall qSim.o Simulator.o TellerQueue.o EventQueue.o Event.o Clock.o -o qSim
+$ ./qSim 10 4 26 2.3
+Statistics for a Common Line.
+There were 4 tellers that served 10 customers over 654.888 seconds.
+The average customer spent 125.595 seconds in the bank with a standard deviation of +/- 75.6352.
+The longest time a customer waited to be served was 171.436.
+The tellers spent a total of 1319.88 seconds serving customers and a total of 5272.07 seconds spent idle.
+
+Statistics for a Line for each Teller.
+There were 4 tellers that served 10 customers over 2513.67 seconds.
+The average customer spent 473.932 seconds in the bank with a standard deviation of +/- 202.289.
+The longest time a customer waited to be served was 431.623.
+The tellers spent a total of 1438.85 seconds serving customers and a total of 4193.18 seconds spent idle.
+
+$ ./qSim 20 6 70 2.3 1234
+Statistics for a Common Line.
+There were 6 tellers that served 20 customers over 1672.73 seconds.
+The average customer spent 161.717 seconds in the bank with a standard deviation of +/- 85.6775.
+The longest time a customer waited to be served was 164.195.
+The tellers spent a total of 2108.45 seconds serving customers and a total of 23552.2 seconds spent idle.
+
+Statistics for a Line for each Teller.
+There were 6 tellers that served 20 customers over 3949.57 seconds.
+The average customer spent 380.156 seconds in the bank with a standard deviation of +/- 138.994.
+The longest time a customer waited to be served was 445.74.
+The tellers spent a total of 2057.98 seconds serving customers and a total of 16844.1 seconds spent idle.
+
+$ ./qSim 15 10 70 5.4
+Statistics for a Common Line.
+There were 10 tellers that served 15 customers over 406.161 seconds.
+The average customer spent 52.7989 seconds in the bank with a standard deviation of +/- 27.9863.
+The longest time a customer waited to be served was 72.4724.
+The tellers spent a total of 4958.73 seconds serving customers and a total of 38399.2 seconds spent idle.
+
+Statistics for a Line for each Teller.
+There were 10 tellers that served 13 customers over 2054.28 seconds.
+The average customer spent 308.702 seconds in the bank with a standard deviation of +/- 293.483.
+The longest time a customer waited to be served was 637.719.
+The tellers spent a total of 3690.35 seconds serving customers and a total of 24161.7 seconds spent idle.
+
+$ exit
+Script done on Fri 16 Feb 2018 07:39:32 PM EST
